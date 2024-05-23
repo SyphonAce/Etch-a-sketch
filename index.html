@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etch A Sketch</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+  <div class="canvasWrap">
+    <canvas width="1600" height="1000" id="etch-a-sketch"></canvas>
+    <div class="buttons">
+      <button class="shake">Shake!</button>
+    </div>
+
+  </div>
+  <script src="./app.js"></script>
+
+  <style>
+
+body {
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background: white;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d17cf29b-3382-4c03-9bf5-2fe3101893e1/df3sau9-4b283f3e-3cb8-40d3-aa0f-477ce13a3aa3.png/v1/fill/w_1210,h_660/sukuna_manga_render_by_lxker1x_df3sau9-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9Njk5IiwicGF0aCI6IlwvZlwvZDE3Y2YyOWItMzM4Mi00YzAzLTliZjUtMmZlMzEwMTg5M2UxXC9kZjNzYXU5LTRiMjgzZjNlLTNjYjgtNDBkMy1hYTBmLTQ3N2NlMTNhM2FhMy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.6AhDyhzOrTe-KIx_khSvbigoRCPh_bOORiLtHhHwBw0);
+    background-size: cover;
+  }
+
+  canvas {
+    border: 30px solid #e80000;
+    border-radius: 10px;
+    /* Set the width and height to half the actual size so it doesn't look pixelated */
+    width: 800px;
+    height: 500px;
+    background: white;
+  }
+
+  canvas.shake {
+    animation: shake 0.5s linear 1;
+  }
+
+  @keyframes shake {
+
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+</style>
+</body>
+
+</html>
